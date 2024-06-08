@@ -1,0 +1,16 @@
+services:
+  PestoRabbitMQ:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - pesto_rabbitmq_data:/var/lib/rabbitmq
+  PestoRestAPI:
+    build:
+      context: ./API/ 
+      dockerfile: ./Dockerfile
+    image: pesto_rest_api_image
+
+volumes:
+  pesto_rabbitmq_data:

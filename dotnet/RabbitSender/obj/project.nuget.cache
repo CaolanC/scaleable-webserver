@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KXOYSJes0EdtLoCCDRbvc9gmy4Uz3bI/uPCiobKmjbbGNURbX5CqW7KfQ2LMmJj/FRd5oMFcEcAQ0MWTTMEdpA==",
+  "success": true,
+  "projectFilePath": "/home/cochrac2/projects/Pesto/dotnet/RabbitSender/RabbitSender.csproj",
+  "expectedPackageFiles": [
+    "/home/cochrac2/.nuget/packages/rabbitmq.client/6.8.1/rabbitmq.client.6.8.1.nupkg.sha512",
+    "/home/cochrac2/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/cochrac2/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
