@@ -4,11 +4,11 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["src/RestAPI/RestAPI.csproj", "src/RestAPI/"]
-RUN dotnet restore "src/RestAPI/RestAPI.csproj"
-COPY . . 
 COPY ["src/RestAPI/RestAPI.csproj", "/src/RestAPI/"]
+RUN dotnet restore "/src/RestAPI/RestAPI.csproj"
+COPY ["src/RestAPI", "RestAPI"]
 WORKDIR "/src/RestAPI/"
+RUN ls
 
 RUN dotnet build "RestAPI.csproj" -c Release -o /app/build
 
