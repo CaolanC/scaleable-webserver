@@ -15,7 +15,7 @@ services:
   
   PestoFrontend:
     build:
-      context: ./Frontend/ 
+      context: ./frontend/ 
       dockerfile: ./Dockerfile
     image: pesto_frontend_image
     ports:
