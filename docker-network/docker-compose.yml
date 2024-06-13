@@ -1,4 +1,5 @@
 services:
+
   PestoRabbitMQ:
     image: rabbitmq:3-management
     ports:
@@ -20,6 +21,9 @@ services:
     image: pesto_frontend_image
     ports:
       - "8080:80"
+
+    environment:
+      DOMAIN_PATH_START: localhost:8080/api/
 
   PestoDB:
     build:
