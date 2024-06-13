@@ -3,7 +3,10 @@ import './App.css';
 
 function App() {
   return (
-    <h1>hi</h1>
+    <div>
+      <h1>Hi!</h1>
+      <h2>API URL: HI LOL!</h2>
+    </div>
   );
 }
 

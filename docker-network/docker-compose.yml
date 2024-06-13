@@ -23,7 +23,7 @@ services:
       - "8080:80"
 
     environment:
-      DOMAIN_PATH_START: localhost:8080/api/
+      - REACT_APP_API_URL=${API_URL}
 
   PestoDB:
     build:
